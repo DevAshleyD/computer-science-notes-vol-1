@@ -1,0 +1,26 @@
+[...document.querySelectorAll(".station input[name='stid']")].map(d => d.value)
+
+
+
+total = []
+
+function scrapePage() {
+	let stationValues = [...document.querySelectorAll(".station input[name='stid']")].map(d => d.value)
+	total = [...total, ...stationValues]
+	console.log("Going back")
+	document.querySelector("#buttonSelectStation").click()
+}
+
+var prefectureButtons = [...document.querySelectorAll(".prefecture")]
+prefectureButtons.forEach(function(xxx, i) {
+	let name = xxx.innerText
+	let delay = i * 4000
+
+	setTimeout(function() {
+		console.log("Finding the button")
+		let button = [...document.querySelectorAll(".prefecture")][i]
+		console.log("Clicking the button")
+		button.click()
+		setTimeout(scrapePage, 1000)
+	}, delay)
+})

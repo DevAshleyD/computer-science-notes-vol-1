@@ -1,0 +1,196 @@
+nomodel @
+names city  sex  un4gy  distcat  agxcat  agecat  dcat  time 
+      upyr  pyr  subjects  gdist  agex  age  year  
+      nhl  hl  mye  all  oll  alltot  cll  hcl  clltot  atl  
+      aml  oml  amol  amltot  cml  othleuk  noncll  leuktot  hldtot  
+      mar_ad10  mar_ag  mar_an  
+@
+
+skip 1@
+INPUT lsshempy.csv@
+
+level city sex un4gy distcat agxcat agecat  @
+
+select mar_ad10 >= 0 @
+
+tran nic = gdist > 12000;
+     over4gy = 1 - un4gy ;
+     yob = year-age;
+
+     bcohort = (yob-1915)/10;
+     bcsq = bcohort*bcohort;
+    
+     e30 = (agex - 30)/10 ;
+     e30sq = e30^2 ;
+
+     tsx = (age -agex) ;
+     tsx25 = (tsx-25)/10 ;
+     ltsx25 = log(tsx/25) ;  ltsx25sq = ltsx25^2 ;
+     tsx40 = (tsx - 40) / 10;
+     ltsx40 = log(tsx/40);   ltsx40sq = ltsx40^2;
+
+     lage70  = log(age/70) ;  lage70sq = lage70^2  ; 
+     lage55 = log(age/55) ;
+     lage40 = log(age/40);    lage40sq = lage40^2;
+     lage40qsp = lage40sq*(age < 40);
+     lage70qsp = lage70sq*(age > 70) ;
+
+     py10k = pyr/10000 ;
+
+     male = sex == 1 ; female = sex == 2;
+     msex = 2*sex - 3 ;
+
+     adult = (agex >= 20);
+     adultf = adult * female;
+
+     dosegy=mar_ad10/1000;
+     dosegysq=dosegy*dosegy*1.12;
+
+     hiro = city == 1 ; naga = city ==2;
+
+@
+pyr py10k @
+
+
+! Total Leukemia other than CLL and ATL @
+cases noncll @
+sum noncll @
+
+!ERR model @
+rrisk @
+logl 0 nic*city female naga bcohort bcsq lage70 lage70sq @
+line 1 dosegy dosegysq @
+logl 1 lage70 ltsx40 over4gy@
+fit @
+
+
+! EAR model @
+add @
+logl 0 nic*city female naga bcohort bcsq lage70 lage70sq @
+line 1 dosegy dosegysq @
+logl 1 e30 lage70 naga female over4gy@
+fit @
+
+
+! AML @
+nomodel @
+
+cases amltot @
+sum amltot @
+
+!ERR model @
+rrisk @
+logl 0 nic*city female bcohort bcsq lage70 lage70sq female*lage70 female*lage70sq @
+line 1 dosegysq @
+logl 1 e30 e30sq lage70 over4gy@
+fit @
+
+! EAR model @
+add @
+logl 0 nic*city female bcohort bcsq lage70 lage70sq female*lage70 female*lage70sq @
+line 1 dosegysq @
+logl 1 lage70 lage70sq over4gy@
+fit @
+
+
+! ALL @
+nomodel @
+cases alltot @
+sum alltot @
+
+!ERR model @
+rrisk @
+logl 0 nic*city lage70 @
+line 1 dosegy @
+logl 1 female lage70 over4gy@
+fit @
+
+! EAR model @
+add @
+logl 0 nic*city lage70 @
+line 1 dosegy @
+logl 1 female lage70 over4gy@
+fit @
+
+
+! CML @
+nomodel @
+cases cml @
+sum cml @
+
+!ERR model @
+rrisk @
+logl 0 nic*city female lage70 female*lage70 @
+line 1 dosegy @
+logl 1 naga ltsx25 lage55 over4gy@
+fit @
+
+! EAR model @
+add @
+logl 0 nic*city female lage70 female*lage70 @
+line 1 dosegy @
+logl 1 female naga ltsx25 lage55 female*lage55 over4gy@
+fit @
+
+
+! ATL @
+nomodel @
+select dosegy >=0 and city == 2 @
+cases atl @
+sum atl @
+
+
+!Baseline rate
+rrisk @
+logl 0 nic bcohort lage70 @
+fit @
+
+
+! NHL @
+nomodel @
+noselect @
+select dosegy >=0 @
+cases nhl @
+sum nhl @
+
+!ERR model @
+rrisk @
+logl 0 nic*city female bcohort bcsq lage70 lage70sq lage40qsp lage70qsp@
+line 1 dosegy*sex @
+para 12=0 @
+logl 1 lage40 @ 
+fit @
+
+! EAR model @
+add @
+logl 0 nic*city female bcohort bcsq lage70 lage70sq lage40qsp lage70qsp@
+line 1 dosegy*sex @
+para 12=0 @
+logl 1 @
+fit @
+
+
+! HL @
+nomodel @
+cases hl @
+sum hl @
+
+!ERR & EAR model @
+risk @
+logl 0 nic*city female bcohort lage70 @
+fit @
+
+
+!Multiple Myeloma @
+nomodel @
+cases mye @
+pyr py10k @
+
+sum mye @
+
+!ERR & EAR model @
+
+logl 0 nic*city bcohort bcsq lage70 lage70sq lage70qsp@
+fit @
+
+

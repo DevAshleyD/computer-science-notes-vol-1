@@ -1,0 +1,35 @@
+REPLACe
+       .    \w+$
+
+
+REPLACE
+\*
+ 
+
+REPLACE
+ (\d) 
+ 0$1
+
+REPLACE
+#
+
+REPLACE
+（注）
+
+REPLACE
+(\d\d\d\d)
+,$1
+
+REPLACE
+  
+ 
+
+REPLACE
+ひかんざくら
+,1
+
+REPLACE
+-
+,
+
+DELETE avg, type cols

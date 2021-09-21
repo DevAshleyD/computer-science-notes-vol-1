@@ -1,0 +1,16 @@
+.flex-parent {
+	margin:50px auto;
+	border:1px solid pink;
+	display:flex;
+	justify-content: space-between;
+	width:700px;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+}
+
+.flex-item {
+	width:200px;
+	background:#ccc;
+	border:1px dashed #aaa;
+}
+	

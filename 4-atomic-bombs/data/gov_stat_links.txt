@@ -1,0 +1,9 @@
+H26,https://web.archive.org/web/20150609201041/https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+H27,https://web.archive.org/web/20150712100450/https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+H28,https://web.archive.org/web/20161209023932/https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+H29,https://web.archive.org/web/20170704075435/https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+H30,https://web.archive.org/web/20181221062804/https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+
+
+
+*Used Wayback Machine

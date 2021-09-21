@@ -1,0 +1,70 @@
+Ideas for survivor stories:
+* NYT 911 border story
+* Pull audio sound bites from YouTube (am I allowed to do that?)
+* Overlay dots??? Or something else against background of Hiroshima destruction
+* Link to archive footage 
+* Highlight and add poignant quotes 
+* Organise dots by age or location? Do they need to be dots? How else can I humanise the data?
+* Bricks of photos of survivors??? Can I pull them from peace museum?
+
+STORYBOARD:
+- cover photo of the hiroshim aftermath? or bricks of art by survivors
+- use foetus/woman/children/etc icons for the testimonials
+- follow the Reuters Rohingya example to contextualise number of DEATH count (see how they compare to survivor count)
+- highlight key accounts, like those irradiated in the womb or the man who was irradiated twice
+- embed audio -- NYT 911 border story
+
+
+MATERIAL USAGE REQUESTS:
+- Email and call Peace Memorial for use of testimonials, photos, etc
+- set up FAX, submit application
+- email peace-nagasaki
+- 広島平和記念資料館が所蔵する被爆後の広島市内を撮影した写真などを検索できます。これらの写真の利用については広島平和記念資料館学芸課（代表電話082-241-4004）にお問い合わせください。
+- 当ホームページのトップページ以外のリンクについては、ホームページ管理者の許可が必要となりますので、つぎの問合せ先にメールで問合せください。 info@peace-nagasaki.go.jp
+
+
+国立広島・長崎原爆死没者追悼平和祈念館　御中
+
+初めてご連絡させていただきます。コロンビア大学の舩越と申します。
+
+国立広島・長崎原爆死没者追悼平和祈念館　平和情報ネットワーク（https://www.global-peace.go.jp/）に公開されている資料について、今回ご連絡いたしました。 
+私はコロンビア大学にてジャーナリズムを学んでおり、授業の課題の一環として、各自の関心事項に合わせた記事を執筆しており、原爆の被害について調べております。被爆者の証言を通じて、原爆の人的被害を伝えることが目的です。
+
+平和情報ネットワークウェブサイトに公開されている、体験記・被爆者の証言および詳細・朗読音声を、
+記事にて転載する許可をいただけますでしょうか。
+いくつかの証言・体験記などを英訳し、記事にて引用させていただきたく思います。記事は英語で執筆いたします。
+どの証言等を記事で引用するかまだ確定しておりません。
+
+大変お手数ではございますが、今週水曜日（8月7日）までに、メールにてお返事いただけますと幸いです。 
+何卒宜しくお願いいたします。
+
+舩越
+
+----
+
+啓発課　FAX +8182-247-2464
+
+
+広島平和記念資料館 啓発課 御中
+
+初めてご連絡させていただきます。コロンビア大学の舩越と申します。
+
+平和データベースに公開されている資料について、今回ご連絡いたしました。
+私はコロンビア大学にてジャーナリズムを学んでおり、授業の課題の一環として、各自の関心事項に合わせた記事を執筆しており、原爆の被害について調べております。被爆者の証言を通じて、原爆の人的被害を伝えることが目的です。
+
+平和データベースに公開されている、体験記・被爆者の証言および詳細・朗読音声を、
+記事にて転載する許可をいただけますでしょうか。
+いくつかの証言・体験記などを英訳し、記事にて引用させていただきたく思います。記事は英語で執筆いたします。
+どの証言等を記事で引用するかまだ確定しておりません。
+
+大変お手数ではございますが、今週水曜日（8月7日）までに、メールにてお返事いただけますと幸いです。 
+何卒宜しくお願いいたします。
+
+舩越
+
+
+
+
+INTERACTIVES:
+- plotly in pandas
+- iframes

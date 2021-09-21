@@ -1,0 +1,108 @@
+<style>
+    .scrolly-image {
+        z-index: -1;
+    }
+    .scrolly-image img {
+        max-width: 100%;
+    }
+
+    .step {
+        min-height: 80vh;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .scrolly-image {
+        position: sticky;
+        top: 0;
+    }
+    .step p {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+    }
+</style>
+
+
+<div class="scrolly-container">
+    <div class="scrolly-image">
+        <img src="download.jpeg">
+    </div>
+    <div class="scrolly-content">
+        <div class="step" data-image="download.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-2.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-3.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</div>
+
+<div class="scrolly-container">
+    <div class="scrolly-image">
+        <img src="download.jpeg">
+    </div>
+    <div class="scrolly-content">
+        <div class="step" data-image="download.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-2.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-3.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-2.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-3.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-2.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="step" data-image="download-3.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</div>
+
+<!-- include our scrolling library -->
+<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+<script src="https://unpkg.com/scrollama"></script>
+<script src='stickyfill.min.js'></script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        // Allow position: sticky to work in old browsers
+        var elements = document.querySelectorAll('.scrolly-image');
+        Stickyfill.add(elements);
+
+        // instantiate the scrollama
+        var scroller = scrollama();
+
+        scroller
+        .setup({
+            offset: 0.8, // how far from the top?
+            step: '.step', // class for stepping through
+            debug: true, // shows the line
+        })
+        .onStepEnter(function(response) {
+            // look at data-image attribute
+            let imagePath = response.element.getAttribute('data-image')
+            if(imagePath) {
+                // if it exists, change the img tag to match
+                response.element.parentNode.parentNode
+                    .querySelector("img")
+                    .setAttribute("src", imagePath)
+            }
+        })
+    }
+</script>

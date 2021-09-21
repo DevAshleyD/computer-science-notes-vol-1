@@ -1,0 +1,79 @@
+PROJECT 5 NOTES:
+
+- macro chart of deaths (static)
+- population comparison: compare squares
+- explain there are X in the list of testimonials and artwork
+- exposure age distribution, pick up quotes?
+
+- COUNT: On August 6, bomb was dropped. thousands died immediately.
+On Aug 9, x. xxxx
+
+By the end of 1945, xxx estimated to have been killed by the aomic bombs - compare to 911 killing, etc. landmarks.
+
+- Make dots/squares grow, to the latest count. compare to city populations.
+
+!!!!!!!!!!!!!!!!!!!
+NEXT STEP:
+- do static instead of interactive? highilght stotries
+
+ATTRIB for icons?:
+fetus by Vlad Likh from the Noun Project
+Baby by Studio GLD from the Noun Project
+Baby by Nikita Kravchuk from the Noun Project
+	
+TO DO:
+- email to peace info network for permission, explaining need database -- translating to eng
+
+POPULATION CHARTS STEPS:
+1) Make a list of the population for different cities, etc that I want to compare (Atomic bomb death count: 493,344, Zurich: 385,000, etc)
+2) Decide on the scale -- i.e. is one rectangle going to represent 10 people, 100 people, 1,000 people? Or is one dot going to represent one person?
+3) Based on the scale, calculate how many "units" of rectangles, doets etc you need in your chart to represent the population. Also decide how many rows/columns of rectangles (or dots) you want in your chart
+
+EXAMPLE:
+Atomic bomb death count in 2018: 493,344
+Scale: 1 rectangle = 1,000 people
+493,344 / 1,000 = 493 whole rectangles + 0.344 left over
+* Now decide: how do I want to arrange the rectangles? How many rows and columns? This is up to you - I decided on 18 * 27 because I liked how the proportions looked
+
+18 (columns) * 27 (rows) = 486 rectangles
+493.344 - 386 = 7.344 extra
+
+** This means I will have 27 complete rows of 18 rectangles, and one row of 7.344 rectangles
+
+Do the same for other populations.
+EX)
+ZURICH: 385,000 https://www.urbandivercities.eu/zurich/
+385 / 18 = 21 rows + 7 rectangles left over
+
+** This means I will have 21 complete rows of 18 rectangles, and one row of 7 rectangles
+
+4) Manually make one rectangle in Illustrator. Then copy the rectangle so that you have two rectangles of the exact same size
+5) Space the two rectangles out in a way that you like
+6) Drag your mouse over the two rectangles so that they are both selected. Then copy and paste both rectangles. Space them out evenly. 
+7) Repeat the copy/paste process with four rectangles, until you have 18 rectangles in a row
+8) Copy the entire row of 18 rectangles, and paste as many times as you need to get the right number of rows
+
+Once you have your main population chart -- in my case, the chart for the atomic bomb victims -- then the next step is to make layers.
+
+1) Create a new layer in Illustrator
+2) Highlight all the rectangles and press Ctrl + F (Ctrl + F let's you paste objects in the exact same spot: https://www.shutterstock.com/blog/10-tricks-for-adobe-illustrator)
+3) Don't click anything else after you have Ctrl + F. Next, click and select the new layer you have just created
+4) At the top of the screen, click Object > Arrange > Send to current layer. This moves the copied rectangles into a separate, new layer
+5) On the layers section (to the right of the screen), you can click on the eyeball icon to "show" or "hide" the layers. You can change colours of the rectangles in just one layer, which is how I got different versions of the population chart where in some of them, the population of Zurich is highlighted, and in another, population of Miami is highlighted
+
+911 death toll: 2,977 killed in New York City, Washington, DC and outside of Shanksville, Pennsylvania.
+Yankee stadium: 54,251
+
+Death count in 2018: 493,344
+
+divided by 1,000 - 493 bricks
+18 * 27 = 486 bricks
+7.344 extra
+
+ZURICH: 385,000 https://www.urbandivercities.eu/zurich/
+(385,000 / 493,344 = 0.78)
+385 / 18 = 21 rows + 7
+
+MIAMI: 454,000 https://www.nationsonline.org/oneworld/map/google_map_Miami.htm
+(454,000 / 493,344 = 0.92)
+454 / 18 = 25 rows + 4

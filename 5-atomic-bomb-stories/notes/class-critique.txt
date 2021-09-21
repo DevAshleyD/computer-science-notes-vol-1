@@ -1,0 +1,26 @@
+CLASS CRITIQUE:
+
+- red - confusing bc inconsistency
+- put 911 rectangles into perspective?
+- label: 20 survivors
+
+STACKED CHART:
+- label colours in the stacked bar chart
+- gridlines?
+- annotations - too busy?
+- get rid of 40 years after annotation? (add more context - 40 years after the bombing, the government made a push to xxxx) maybe get rid off the actual numbers if we have gridlines
+- highlight bar that are annotated
+- gridlines go BEHIND datapoints/bars
+- either gridlines OR numbers?
+- regular years on x-axis, label years in annotation
+- use ai2html
+
+SCROLLY (population)
+- put the 911 graphic next to the bigger chart? 
+- 1000 people label -- to small
+- maybe don't add perspective?
+- instead of comparing to 911, compare to nagasaki/hiroshima cities?
+
+SCROLLY (stories)
+- ai2html
+- video/photos of survivors	

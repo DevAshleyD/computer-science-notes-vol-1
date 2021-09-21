@@ -1,0 +1,68 @@
+DATA GATHERING:
+
+OFFICIAL DATA:
+- Tried to get data on the number of DEATHS of hibaukua every year - no national data
+- Hiroshima/Nagasaki individually keep a list of deaths 原爆死没者名簿, but data available online only 2012-2018 for Hiroshima.
+- Got dataset of the number of people who are recognised by the Japanese government as being hibakusha, or victims of the atomic bombs. The data is from 1955-2018. This dataset represents the number of LIVING people who are hibakusha -- the number initially increased, probably because more people got registered, and has been decreasing recently because they’re ageing and dying. (https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049131.html)
+- Got dataset that represents the breakdown in the type of hibakusha you are, for 2019. The four types are: directly affected; those who entered Hiroshima/Nagasaki within two weeks of the bombing; those who god radiated for rescue efforts; those whose mothers got radiated. I can probably get this data for the past few years.
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+
+ACADEMIC PAPERS:
+- Searched "atomic bomb survivors"  data hiroshima nagasaki on Google Scholar
+- Found this paper: Dosimetric Impact of a New Computational Voxel Phantom Series for the Japanese Atomic Bomb Survivors: Children and Adults (https://www.rrjournal.org/doi/abs/10.1667/RR15267.1)
+- 'One of the largest sources of data on radiation exposure in humans is the study of the atomic bomb survivors at Hiroshima and Nagasaki, Japan performed by the Radiation Effects Research Foundation (RERF). As part of their retrospective dosimetry efforts for the atomic bomb survivors, RERF published two core systems: Dosimetry System 1986 (DS86) and Dosimetry System 2002 (DS02)'
+- YoungRW, KerrGD, eds. Reassessment of the atomic bomb radiation dosimetry for Hiroshima and Nagasaki - Dosimetry System 2002.Hiroshima and Nagasaki, Japan: Radiation Effects Research Foundation; 2005. (https://bit.ly/2HSS3vE)
+- Radiation exposure and circulatory disease risk: Hiroshima and Nagasaki atomic bomb survivor data, 1950-2003 (https://doi.org/10.1136/bmj.b5349)
+- cancer data for a-bomb survivors https://www.rerf.or.jp/en/guestbk_entry_en/complete_en/?type=zip&post_id=2381
+
+
+DATA GATHERING CONSIDERATIONS:
+- DEATHS caused vs number of registered survivors. What best captures the continuing harm? What am I trying to show?
+
+****LIST OF DATASETS USED:
+- hibakusha_data_cleaned.csv (Cleaned, Eng version of 被爆者（被爆者健康手帳所持者）数の推移
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049131.html)
+- hiroshima_death_list.zip (hiroshima_death_list.pdf) PW: 9wkgjmH
+
+
+QUESTIONS FROM ARIANA:
+- Were people encouraged NOT to register because of discrimination? Did that affect registering as hibakusha?
+- Why did the number of registered survivors increase then decrease?
+- get POPULATION data for Nagasaki/Hiroshima, and look at the PERCENTAGE
+- Return to this story in the future, when I can do more reporting
+- There are X number of people in Tokyo today, and X times as many were bombed in xxxx. >>> People don't do well with big numbers. It's good to give points of comparison to give the sense that the SCOPE is so, so big
+- Today, there are XXX people living in Nagasaki. Out of that, xxx people are survivors.
+
+STEPS:
+- Gather data
+- Cleaned and saved as hiroshima_death_list_cleaned.csv
+- Clean govt data of survivors and saved as hibakusha_data_cleaned.csv 
+- Use Way Back Machine to collect type/prefecture breakdown of survivor data from https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000049130.html
+- Get and clean Japanese population data from e-Stat, Japan (https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00200524&tstat=000000090001&cycle=0&tclass1=000000090004&tclass2=000000090005) Also from (https://www.stat.go.jp/data/jinsui/2018np/index.html)
+
+DEATH COUNT:
+- There is NO CONCLUSIVE NUMBER. 
+Different estimates:
+- 140,000 dead by end-1945, total
+- 350,000 living in Hiroshima at time of bombing. 50% died on the day in radius of 1.2km (Nagasaki city hall: http://www.city.hiroshima.lg.jp/www/contents/1111638957650/index.html)
+- 死者 73,884人　負傷者 74,909人　（1945年12月までの推定　長崎市原爆資料保存委員会調査による）
+67町が消滅　半径1050ｍ以内に遮蔽物がないところの致死率はほぼ100％です (http://city.nagasaki.ajisai-call.jp/faq/show/3705?category_id=18)
+
+COUNTING ATOMIC BOMB SURVIVORS - Considerations:
+- Grids?
+- How to demarcate the negative space?
+- Colours?
+- What information to include?
+
+EXPLAIN THE INCREASE IN THE DATA:
+https://www.mhlw.go.jp/bunya/kenkou/genbaku09/17.html
+https://iht-retrospective.blogs.nytimes.com/2015/08/05/1945-hiroshima-hit-by-atomic-bomb/?searchResultPosition=4
+https://www.reuters.com/article/us-japan-obama-hiroshima/obama-mourns-dead-in-hiroshima-calls-for-world-without-nuclear-arms-idUSKCN0YH2PQ
+https://www.reuters.com/article/us-japan-obama-hiroshima-voices-factbox/hiroshima-survivors-obama-speech-moving-more-than-enough-idUSKCN0YI0GL
+https://learning.blogs.nytimes.com/2011/08/09/aug-9-1945-u-s-drops-atomic-bomb-on-nagasaki-japan/?searchResultPosition=3
+
+
+Half of the people who were within a 1.2-km radius of ground zero died on the day of the bombings.
+
+CHECKLIST:
+- Credit Wee People

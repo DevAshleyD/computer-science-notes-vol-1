@@ -1,0 +1,1 @@
+iconv -f SHIFT-JIS -t UTF-8 data\ \(1\).csv > data-converted.csv
